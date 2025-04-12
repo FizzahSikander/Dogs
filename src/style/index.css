@@ -1,0 +1,477 @@
+/* Reset & Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fffaf0;
+    color: #333;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    text-align: center;
+    color:hsla(180,51.4%,51.6%,1);
+    margin-bottom: 3rem;
+  }
+  
+  /* Forms */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    background-color: #fefae0;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[list],
+  label {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffb703;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #fb8500;
+  }
+  
+  img {
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Saved Dogs List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  li {
+    background-color: #f0efeb;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  li span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  /* Edit/Delete Links */
+  a {
+    text-decoration: none;
+    color: #219ebc;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #e3f2fd;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    color: #0277bd;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-form input,
+.profile-form textarea {
+    padding: 12px;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.profile-form input:focus,
+.profile-form textarea:focus {
+    border-color: #42a5f5;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.friend-section {
+    display: flex;
+    gap: 10px;
+}
+
+.friend-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.friend-list li {
+    background: #bbdefb;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-label {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0277bd;
+}
+
+.secondary-btn,
+.submit-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-btn {
+    background-color: #4fc3f7;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background-color: #29b6f6;
+}
+
+.remove-btn {
+    background-color: #ef5350;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #e53935;
+}
+
+.submit-btn {
+    background-color: #0288d1;
+    color: white;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #0277bd;
+}
+
+.dog-preview {
+    margin-top: 15px;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.saved-dogs-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: #e3f2fd;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  text-align: center;
+  color: #0277bd;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  background-color: #4fc3f7;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #29b6f6;
+}
+
+.dog-list {
+  list-style: none;
+  padding: 0;
+}
+
+.dog-card {
+  background-color: #ffffff;
+  border: 1px solid #bbdefb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.friend-list {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.badge {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #81c784;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.dog-image-wrapper {
+  margin-top: 15px;
+}
+
+.dog-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  margin-top: 1rem;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #1976d2;
+}
+
+.edit-btn:hover {
+  background-color: #1565c0;
+}
+
+.delete-btn {
+  background-color: #e53935;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .dog-card {
+      padding: 1rem;
+  }
+
+  .dog-image {
+      width: 100%;
+  }
+
+  .edit-btn,
+  .delete-btn {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+  .button-group {
+      display: flex;
+      flex-direction: column;
+  }
+}
+.edit-dog-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #e3f2fd;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: #0288d1;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.edit-dog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-field {
+  padding: 12px;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.friends-section {
+  background-color: #f1f8ff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.friend-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.friend-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: red;
+}
+
+.add-friend {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-friend input {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+.add-friend button {
+  padding: 8px 12px;
+  background-color: #4fc3f7;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-btn {
+  background-color: #42a5f5;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dog-preview {
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+  background-color: #0288d1;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0277bd;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #0288d1;
+}
